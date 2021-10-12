@@ -146,15 +146,12 @@ header .arrow {
     background-image: url(./desktop/image-transform.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;*/
+    background-position: center bottom;
 }
 
 
 
-
-
-/*
-@media only screen and (max-width: 785px){
+@media only screen and (max-width: 600px){
     .brand {
         display: flex;
         flex-direction: column-reverse;
@@ -166,16 +163,68 @@ header .arrow {
 
 .image-container {
     width: 100%;
-    height: 624px;
+    height: 500px;
     background-image: url(./mobile/image-transform.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     
 }
 
+.brandtext-box {
+   width: 85%;
+   height: auto;
+   margin: 3rem auto; 
 }
 
-*/
+.title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.body {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+
+.learnlink {
+    position:none;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+    padding-left: 0;
+    text-align: center;
+    
+}
+
+.learnlink::before{
+    border: 5px solid var(--yellow);
+    opacity: 50%;
+    content:"";
+    margin: 0 auto; 
+    position: absolute; 
+    top: 60%; left: 0; right: 0; bottom: 0;
+    width: 25%;
+    z-index: -1;
+}
+
+}
+
+@media only screen and (max-width: 514px) and (min-width:429px){
+
+    .learnlink::before{
+    width: 30%;
+}
+
+}    
+
+@media only screen and (max-width: 428px) and (min-width:375px){
+
+    .learnlink::before{
+    width: 35%;
+}
+
+}  
 
 
 
