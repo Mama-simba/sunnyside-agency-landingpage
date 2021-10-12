@@ -198,14 +198,7 @@ header .arrow {
 }
 
 .learnlink::before{
-    border: 5px solid var(--yellow);
-    opacity: 50%;
-    content:"";
-    margin: 0 auto; 
-    position: absolute; 
-    top: 60%; left: 0; right: 0; bottom: 0;
     width: 25%;
-    z-index: -1;
 }
 
 }
@@ -228,3 +221,90 @@ header .arrow {
 
 
 
+/* AUDIENCE SECTION */
+
+.audience {
+    display: flex;
+    font-family: 'Fraunces', serif;
+}
+
+
+.image-container2 {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    background-image: url(./desktop/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+
+.learnlink2 {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--darkblue);
+    position:relative;
+    z-index: 1;
+    padding-left: 0.5rem;
+}
+
+.learnlink2::before{
+    border: 5px solid var(--softred);
+    opacity: 50%;
+    content:"";
+    margin: 0 auto; 
+    position: absolute; 
+    top: 60%; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .audience {
+        display: flex;
+        flex-direction: column;
+}  
+
+
+.image-container2 {
+    width: 100%;
+    height: 500px;
+    background-image: url(./mobile/image-stand-out.jpg);
+    
+}
+
+
+.learnlink2 {
+    position:none;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+    padding-left: 0;
+    text-align: center;
+    
+}
+
+.learnlink2::before{
+    width: 25%;
+}
+
+}
+
+@media only screen and (max-width: 514px) and (min-width:429px){
+
+    .learnlink2::before{
+    width: 30%;
+}
+
+}    
+
+@media only screen and (max-width: 428px) and (min-width:375px){
+
+    .learnlink2::before{
+    width: 35%;
+}
+
+} 
