@@ -18,7 +18,7 @@ html {
     --darkmoderatecyan: hsl(168, 34%, 41%); /*footer*/
     
     /* Neutral colors */
-    --darkblue: hsl(212, 27%, 19%);
+    --dark: hsl(212, 27%, 19%);
     --verydarkgrayishblue:hsl(213, 9%, 39%);
     --darkgrayishblue:hsl(232, 10%, 55%); 
     --grayishblue:hsl(210, 4%, 67%); 
@@ -108,7 +108,7 @@ header .arrow {
 .title {
     width: 60%;
     padding-bottom: 2rem;
-    color: var(--darkblue);
+    color: var(--dark);
 }
 
 .body {
@@ -122,7 +122,7 @@ header .arrow {
 .learnlink {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--darkblue);
+    color: var(--dark);
     position:relative;
     z-index: 1;
     padding-left: 0.5rem;
@@ -243,7 +243,7 @@ header .arrow {
 .learnlink2 {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--darkblue);
+    color: var(--dark);
     position:relative;
     z-index: 1;
     padding-left: 0.5rem;
@@ -298,7 +298,6 @@ header .arrow {
     .learnlink2::before{
     width: 30%;
 }
-
 }    
 
 @media only screen and (max-width: 428px) and (min-width:375px){
@@ -306,5 +305,60 @@ header .arrow {
     .learnlink2::before{
     width: 35%;
 }
-
 } 
+
+
+
+/* WOKR SECTION */
+
+.work {
+    width: 100%;
+    display: flex;
+    font-family: 'Fraunces', serif;
+}
+
+.designtext {
+    width: 55%;
+    margin: 20rem auto 0 auto;
+    text-align: center;
+    color: var(--darkcyan);
+}
+
+.designtext p {
+    line-height: 1.5;
+    opacity: 70%;
+    padding-top: 1.5rem;
+}
+
+.design {
+    width: 50%;
+    height: 500px;
+    background-image: url(./desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.photography {
+    width: 50%;
+    height: 500px;
+    background-image: url(./desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.phototext {
+    width: 55%;
+    margin: 20rem auto 0 auto;
+    text-align: center;
+    color: var(--darkblue);
+}
+
+.phototext p {
+    line-height: 1.5;
+    opacity: 70%;
+    padding-top: 1.5rem;
+}
+
