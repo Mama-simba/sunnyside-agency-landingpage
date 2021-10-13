@@ -92,17 +92,19 @@ header .arrow {
 .brand {
     display: flex;
     font-family: 'Fraunces', serif;
+    
 }
 
 .text-container{
     width: 50%;
-    height: auto;
+    height: 600px;
 }
 
 .brandtext-box {
    width: 50%;
    height: auto;
-   margin: 5rem auto;   
+   margin: 8rem auto;
+   
 }
 
 .title {
@@ -141,17 +143,17 @@ header .arrow {
 
 .image-container {
     width: 50%;
-    height: auto;
+    height: 600px;
     overflow: hidden;
     background-image: url(./desktop/image-transform.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
+    
 }
 
 
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 770px){
     .brand {
         display: flex;
         flex-direction: column-reverse;
@@ -159,12 +161,12 @@ header .arrow {
 
 .text-container{
     width: 100%;
+    height: 300px;
 }
 
 .image-container {
     width: 100%;
-    height: 500px;
-    background-image: url(./mobile/image-transform.jpg);
+    height: 400px;
     
 }
 
@@ -204,6 +206,7 @@ header .arrow {
 }
 
 @media only screen and (max-width: 514px) and (min-width:429px){
+  
 
     .learnlink::before{
     width: 30%;
@@ -231,12 +234,12 @@ header .arrow {
 
 .image-container2 {
     width: 50%;
-    height: auto;
+    height: 600px;
     overflow: hidden;
     background-image: url(./desktop/image-stand-out.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
 }
 
 
@@ -262,7 +265,7 @@ header .arrow {
 
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 770px){
     .audience {
         display: flex;
         flex-direction: column;
@@ -271,11 +274,9 @@ header .arrow {
 
 .image-container2 {
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-image: url(./mobile/image-stand-out.jpg);
-    
 }
-
 
 .learnlink2 {
     position:none;
@@ -317,9 +318,18 @@ header .arrow {
     font-family: 'Fraunces', serif;
 }
 
+.design {
+    width: 50%;
+    height: 570px;
+    background-image: url(./desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .designtext {
     width: 55%;
-    margin: 20rem auto 0 auto;
+    margin: 22rem auto 0 auto;
     text-align: center;
     color: var(--darkcyan);
 }
@@ -330,19 +340,10 @@ header .arrow {
     padding-top: 1.5rem;
 }
 
-.design {
-    width: 50%;
-    height: 500px;
-    background-image: url(./desktop/image-graphic-design.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-}
 
 .photography {
     width: 50%;
-    height: 500px;
+    height: 570px;
     background-image: url(./desktop/image-photography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -351,7 +352,7 @@ header .arrow {
 
 .phototext {
     width: 55%;
-    margin: 20rem auto 0 auto;
+    margin: 22rem auto 0 auto;
     text-align: center;
     color: var(--darkblue);
 }
@@ -362,3 +363,38 @@ header .arrow {
     padding-top: 1.5rem;
 }
 
+
+
+@media only screen and (max-width: 770px){
+
+    .work {
+    flex-direction: column;
+}
+
+
+.design {
+    width: 100%;
+    height: 550px;
+}
+
+.designtext {
+    width: 90%;
+    font-size: 15px;
+}
+
+
+.photography {
+    width: 100%;
+    height: 550px;
+}
+
+.phototext {
+    width: 90%;
+    font-size: 15px;
+}
+
+
+
+    
+
+}
