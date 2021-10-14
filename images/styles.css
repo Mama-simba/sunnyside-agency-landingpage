@@ -475,3 +475,39 @@ header .arrow {
 
 }
 }
+
+
+
+/* BOTTOM BANNER */
+
+.bottombanner {
+    display: flex; 
+}
+
+.desktopbottombannerpic {
+    display: block;
+    width: 25%;
+}
+
+.mobilebottombannerpic {
+    display: none;
+}
+
+
+@media only screen and (max-width: 770px){
+
+    .bottombanner {
+    flex-wrap: wrap;
+}
+
+.desktopbottombannerpic {
+    display: none;
+}
+
+
+    .mobilebottombannerpic {
+    display: block;
+    width: 50%;
+}
+
+}    
