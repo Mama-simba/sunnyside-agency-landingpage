@@ -511,3 +511,31 @@ header .arrow {
 }
 
 }    
+
+
+/* FOOTER */
+
+
+
+
+
+/* ATTRIBUTION */
+
+.attribution {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: var(--darkcyan);
+    padding: 2rem 1rem;
+}
+
+
+.attribution a {
+  text-decoration: none;
+  color: var(--softred);
+}
+
+.attribution a:hover {
+  color: var(--darkcyan);
+}
+
+
