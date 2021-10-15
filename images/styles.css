@@ -23,34 +23,165 @@ html {
     --darkgrayishblue:hsl(232, 10%, 55%); 
     --grayishblue:hsl(210, 4%, 67%); 
     --white: hsl(0, 0%, 100%); 
-
-    /* 
-
-- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
-- Weights: 600
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700, 900
-    */
     
 }
 
 
 /* NAVIGATION */
 
-nav {
+header {
+    width: 100%;
     height: 4rem;
     background-color: #40bfff;
-    border: 1px solid white;
+    font-family: 'Barlow', sans-serif;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 3rem;
+}
+
+
+.nav-link:hover{
+    color: var(--dark);
+}
+
+.contact {
+    background-color: var(--white);
+    color: var(--dark);
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+}
+
+.contact:hover {
+    background-color: hsla(0, 0%, 100%, 50%);
+    color: var(--white);
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        right: 5%;
+        left: 5%;
+        top: 4rem;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 90%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu:before {
+    border: 25px solid white;
+    content: '';
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: -15px;
+    right: calc(10% - 8%)
 }
 
 
 
 
 
-/* HEADER */
 
 
-header {
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    header a {
+    color: var(--darkgrayishblue);
+}
+
+
+
+.contact {
+    background-color: var(--yellow);
+    color: var(--dark);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+}
+
+.contact:hover {
+    background-color: hsla(0, 0%, 100%, 50%);
+    color: var(--yellow);
+    background-color: var(--dark);
+}
+
+.hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/* BANNER */
+
+
+.mainbanner {
     width: 100%;
     height: 500px;
     background-image: url(./desktop/image-header.jpg);
@@ -59,7 +190,7 @@ header {
     background-position: center;
 }
 
-header h1{
+.mainbanner h1{
     font-family: 'Fraunces', serif;
     color: var(--white);
     text-align: center;
@@ -67,7 +198,7 @@ header h1{
     letter-spacing: 0.3em;
 }
 
-header .arrow {
+.mainbanner .arrow {
     display: block;
     height: 5rem;
     padding-top: 8rem;
@@ -75,12 +206,12 @@ header .arrow {
 }
 
 @media only screen and (max-width: 375px){
-    header {
+    .mainbanner {
     background-image: url(./mobile/image-header.jpg);
     height: 500px;
 }
 
-    header h1{
+    .mainbanner h1{
     text-align: center;
     padding: 4.5rem 2rem 0 2rem;
     

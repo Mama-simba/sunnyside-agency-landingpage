@@ -20,21 +20,41 @@
 
 <body>
 
-  <nav>
-    About
-    Services
-    Projects
-    Contact
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="nav-logo"><img src="./images/logo.svg" alt="Sunnyside logo"></a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link contact">CONTACT</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
 
-  </nav>
+
+ 
 
 
-  <header>
+  <section class="mainbanner">
     
     <h1>WE ARE CREATIVES</h1>
     <img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
 
-  </header>
+  </section>
   
 
   <section class="brand">
@@ -175,5 +195,32 @@
     <p>© Coded by <a href="https://www.cristina-padilla.com/"><strong>Cristina Padilla</strong></a>.</p>
      
   </div>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", showMenu);
+
+      function showMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
+
+
+  </script>
+
+
+
+
 </body>
 </html>
