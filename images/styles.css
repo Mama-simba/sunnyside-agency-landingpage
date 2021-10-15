@@ -515,6 +515,49 @@ header .arrow {
 
 /* FOOTER */
 
+footer {
+    background-color: hsla(168, 34%, 41%, 60%);
+    font-family: 'Barlow', sans-serif;
+    color: var(--darkmoderatecyan);
+    
+}
+
+footer h1 {
+    font-weight: bold;
+    text-align: center;
+    padding: 3rem 0; 
+}
+
+.linksbox {
+    text-align: center;
+}
+
+.linksbox a {
+    text-decoration: none;
+    color: var(--darkmoderatecyan);
+    padding: 0 2rem;
+}
+
+.linksbox a:hover {
+    color: var(--white);
+}
+
+.sociallinks {
+    text-align: center;
+}
+
+.sociallinks i {
+    color: var(--darkmoderatecyan);
+    padding: 3rem 0.5rem;
+    
+}
+
+.sociallinks i:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
 
 
 
