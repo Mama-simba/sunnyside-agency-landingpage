@@ -115,14 +115,6 @@ header a {
     top: -15px;
     right: calc(10% - 8%)
 }
-
-
-
-
-
-
-
-
     .nav-menu.active {
         left: 0;
     }
@@ -170,8 +162,6 @@ header a {
 
 
 }
-
-
 
 
 
@@ -271,6 +261,12 @@ header a {
     width: 100%;
     z-index: -1;
 }
+
+.learnlink:hover {
+   color: var(--softred);
+}
+
+
 
 .image-container {
     width: 50%;
@@ -392,6 +388,9 @@ header a {
     top: 60%; left: 0; right: 0; bottom: 0;
     width: 100%;
     z-index: -1;
+}
+.learnlink2:hover {
+   color: var(--yellow);
 }
 
 
