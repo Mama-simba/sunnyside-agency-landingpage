@@ -95,6 +95,9 @@ header a {
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
         position: fixed;
         right: 5%;
         left: 5%;
@@ -103,7 +106,7 @@ header a {
         background-color: var(--white);
         width: 90%;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.5s;
     }
 
     .nav-menu:before {
@@ -116,7 +119,10 @@ header a {
     right: calc(10% - 8%)
 }
     .nav-menu.active {
-        left: 0;
+        opacity: 1;
+        max-height: none;
+        overflow: visible;
+        transition: 0.5s;
     }
 
     .nav-item {
